@@ -24,7 +24,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     FormsModule,
     HttpModule,
     MaterialModule,
-    FlexLayoutModul
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
