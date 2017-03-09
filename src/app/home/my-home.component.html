@@ -1,0 +1,76 @@
+<md-sidenav-container fullscreen>
+  <toolbar></toolbar>
+  <div class="containerX">
+      <div [fxLayout]="direction" (click)="toggleDirection()" class="colored box" >
+        <div fxFlex="20">  fxFlex="20"  </div>
+        <div fxFlex="60">  fxFlex="60"  </div>
+        <div fxFlex >      fxFlex       </div>
+      </div>
+    </div>
+    <div class=home-container style="margin-top:30px; height:1000px;">
+      <div fxLayout="row" style="height:100%;">
+          <div fxFlex="15" fxFlexAlign="center"> empty space </div>
+          <div fxFlex="15">
+            <div fxLayout="column" style="height:100%">
+              <div fxFlex="40" fxFlexAlight="center">
+                  <md-card>
+                    <md-card-header>
+                      <img md-card-avatar>
+                      <md-card-title>Card with Title</md-card-title>
+                      <md-card-subtitle>Subtitle</md-card-subtitle>
+                    </md-card-header>
+                    <img md-card-image src="/src/assets/bayb.jpg">
+                    <md-card-content>
+                      <p>Content for card</p>
+                    </md-card-content>
+                  </md-card>
+              </div>
+              <div fxFlex="40"> box 2 </div>
+              <div fxFlex> footer </div>
+            </div>
+          </div>
+          <div fxFlex="50"> home container </div>
+          <div fxFlex> extra side space </div>
+      </div>
+    </div>
+</md-sidenav-container>
+  <!--<div layout="row">
+      <div flex>
+          <md-card>
+              <md-card-header>
+                  <md-card-title>
+                      Title Example
+                  </md-card-title>
+                  <md-card-subtitle>
+                      Subtitle Example
+                  </md-card-subtitle>
+                  <img md-card-avatar src="/src/assets/bayb.jpg">
+              </md-card-header>
+          </md-card>
+      </div>
+      <div flex>
+          <md-card>
+              <md-card-header>
+                  <md-card-title>
+                      Title Example
+                  </md-card-title>
+                  <md-card-subtitle>
+                      Subtitle Example
+                  </md-card-subtitle>
+                  <img md-card-avatar src="/src/assets/bayb.jpg">
+              </md-card-header>
+          </md-card>
+      </div>
+  </div>-->
+
+
+
+  
+
+<!-- 
+  <md-toolbar color="primary">
+      <button md-icon-button (click)="start.open()">
+          <md-icon>menu</md-icon>
+      </button>
+      {{ title }}
+  </md-toolbar> -->
