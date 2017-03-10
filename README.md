@@ -25,8 +25,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Installing Bootswatch Theme
-
-Go http://bootswatch.com/cerulean/bootstrap.min.css , copy all. Then, after running "npm install", go into node_modules -> bootstrap -> dist -> css -> bootstrap.min.css, replace all the existing CSS with the bootswatch CSS. This is the custom theme that I chose. If you like something else you can literally just copy a different theme, replace that CSS, and we can play around with different themes. End result is the same, just some different styling.
-=======
