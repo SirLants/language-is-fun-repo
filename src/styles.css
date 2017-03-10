@@ -19,12 +19,13 @@ body {
   box-sizing: content-box !important;
 }
 
-.colorNested, .colored, .coloredContainerX {
-  height:200px;
+.home-container {
+  margin-top: 30px;
+  box-sizing: content-box !important;
 }
 
-md-card {
-  background-color: white;
+.colorNested, .colored, .coloredContainerX {
+  height:200px;
 }
 
 div.coloredContainerX > div, div.colorNested > div > div {
