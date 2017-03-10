@@ -13,17 +13,17 @@ import { UserProfileComponent }      from './user-profile/user-profile.component
 import { MangaBrowserComponent }     from './manga-browser/manga-browser.component';
 
 import 'hammerjs';
-import { ToolbarComponent }          from './toolbar/toolbar.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
+import { HomeToolbarComponent } from './home-toolbar/home-toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyHomeComponent,
-    ToolbarComponent,
     UserProfileComponent,
     MangaBrowserComponent,
-    HomeBodyComponent
+    HomeBodyComponent,
+    HomeToolbarComponent
   ],
   imports: [
     BrowserModule,
