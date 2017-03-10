@@ -9,6 +9,9 @@ import { UserProfileSettingsComponent }			from './user-profile-settings/user-pro
 import { UserProfileStatsComponent }			from './user-profile-stats/user-profile-stats.component';
 import { UserProfileSocialComponent } 			from './user-profile-social/user-profile-social.component';
 
+import { QuizComponent }						from './quiz/quiz.component';
+import { LearningComponent }					from './learning/learning.component';
+
 const routes: Routes = [
 	{ path: '', 								redirectTo: 'home',	 							pathMatch: 'full' },
 	{ path: 'home',								component: HomeComponent, 						children: [
@@ -21,7 +24,9 @@ const routes: Routes = [
 			{path: 'user-profile-stats',				component: UserProfileStatsComponent},
 			{path: 'user-profile-social',				component: UserProfileSocialComponent}
 		]}
-	]}
+	]},
+	{ path: 'quiz',								component: QuizComponent },
+	{ path: 'learning',							component: LearningComponent }
 ];
 
 @NgModule({
