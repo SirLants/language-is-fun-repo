@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MangaBrowserComponent } from './manga-browser.component';
+import { QuizBodyComponent } from './quiz-body.component';
 
-describe('MangaBrowserComponent', () => {
-  let component: MangaBrowserComponent;
-  let fixture: ComponentFixture<MangaBrowserComponent>;
+describe('QuizBodyComponent', () => {
+  let component: QuizBodyComponent;
+  let fixture: ComponentFixture<QuizBodyComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MangaBrowserComponent ]
+      declarations: [ QuizBodyComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MangaBrowserComponent);
+    fixture = TestBed.createComponent(QuizBodyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
