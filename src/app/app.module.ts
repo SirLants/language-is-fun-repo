@@ -11,10 +11,13 @@ import { AppComponent }              from './app.component';
 import { MyHomeComponent }           from './home/my-home.component';
 import { UserProfileComponent }      from './user-profile/user-profile.component';
 import { MangaBrowserComponent }     from './manga-browser/manga-browser.component';
+import { HomeToolbarComponent } from './home-toolbar/home-toolbar.component';
+import { UserProfileSettingsComponent } from './user-profile-settings/user-profile-settings.component';
 
 import 'hammerjs';
 import { HomeBodyComponent } from './home-body/home-body.component';
-import { HomeToolbarComponent } from './home-toolbar/home-toolbar.component';
+import { UserProfileStatsComponent } from './user-profile-stats/user-profile-stats.component';
+import { UserProfileSocialComponent } from './user-profile-social/user-profile-social.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HomeToolbarComponent } from './home-toolbar/home-toolbar.component';
     UserProfileComponent,
     MangaBrowserComponent,
     HomeBodyComponent,
-    HomeToolbarComponent
+    HomeToolbarComponent,
+    UserProfileSettingsComponent,
+    UserProfileStatsComponent,
+    UserProfileSocialComponent
   ],
   imports: [
     BrowserModule,

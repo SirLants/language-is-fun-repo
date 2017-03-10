@@ -1,3 +1,37 @@
-<p>
-  user-profile works!
-</p>
+<div class="body-container">
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="height:800px;">
+    <div fxFlex="20" style="height:100%;">
+      <div fxLayout="column" fxLayoutAlign="space-around" style="height:100%;">
+        <div>
+          <md-card>
+            <md-card-header>
+              <img md-card-avatar>
+              <md-card-title>Lance Johnson</md-card-title>
+              <md-card-subtitle>Sensei</md-card-subtitle>
+            </md-card-header>
+            <img md-card-image src="/src/assets/bayb.jpg">
+            <md-card-actions>
+              <button md-button>UPDATE PROFILE PICTURE</button>
+            </md-card-actions>
+          </md-card>
+        </div>
+        <div>
+          <md-card>
+            <md-card-title>Settings</md-card-title>
+            <hr>
+            <md-card-actions>
+              <button md-button routerLink="user-profile-stats">STATS</button>
+              <hr>
+              <button md-button routerLink="user-profile-settings">SETTINGS</button>
+              <hr>
+              <button md-button routerLink="user-profile-social">SOCIAL</button>
+            </md-card-actions>
+          </md-card>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="60" style="height:100%;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
