@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-learning-toolbar',
+  selector: 'learning-toolbar',
   templateUrl: './learning-toolbar.component.html',
   styleUrls: ['./learning-toolbar.component.css']
 })

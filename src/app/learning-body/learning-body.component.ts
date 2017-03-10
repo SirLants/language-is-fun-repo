@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-learning-body',
+  selector: 'learning-body',
   templateUrl: './learning-body.component.html',
   styleUrls: ['./learning-body.component.css']
 })
