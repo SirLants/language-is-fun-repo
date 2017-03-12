@@ -1,9 +1,22 @@
 <md-toolbar color="primary">
-  <span routerLink="/home">Language Is Fun!</span>
-  <span>Progress</span>
+  <button md-button class="md-primary" routerLink="/home" title="home" >
+    Languge is fun!
+  </button>
+
+  <span style="padding-right: 5px;"></span>
+
+
+  <button md-button class="md-icon-button" title="Pause Quiz">
+    <md-icon class="material-icons"> pause </md-icon>
+  </button>
+<div>
+ <img src="/src/assets/gokuKamehameha.png" style="width:65px; height:45x;">
+<!--  <md-progress-linear md-mode="determinate"></md-progress-linear> -->
+</div>
 
   <!-- This fills the remaining space of the current row -->
-  <span class="fill-remaining-space"></span>
-
-  <span>Exit</span>
+  <span style="padding-right: 30cm;"></span>
+ <button md-button class="md-icon-button" title="Exit Quiz" routerLink="/home">
+    <md-icon class="material-icons"> cancel</md-icon>
+  </button>
 </md-toolbar>

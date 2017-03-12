@@ -1,9 +1,21 @@
 <md-toolbar color="primary">
-  <span routerLink="home-body">Language Is Fun!</span>
-  <span routerLink="home-manga-browser" style="margin-left:30px;">Read Manga</span>
+  <div>
+ 
+  <button md-button class="md-primary" routerLink="/home" title="home" >
+    Languge is fun!
+  </button>
 
-  <!-- This fills the remaining space of the current row -->
-  <span class="fill-remaining-space"></span>
+  <button md-button class="md-raised" routerLink="/home-manga-browser">
+    Read Manga
+  </button>
 
-  <span routerLink="user-profile" style="margin-right:30px;">Profile</span>
+  <span style="padding-right: 30cm;"></span>
+
+ <button md-button class="md-icon-button" title="Profile" routerLink="/user-profile">
+  <!--  <md-icon class="material-icons"> person </md-icon> -->
+  <img src="/src/assets/hellsing.png" style="width: 30px; height: 40px; border-radius: 50%"> 
+  
+  </button>
+
+  </div>
 </md-toolbar>
