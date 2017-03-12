@@ -143,3 +143,17 @@ div.colored.box.nopad > div {
   min-width: 75px;
   min-height: 50px;
 }
+
+.exit-button-spacing {
+    padding-right: 30cm;
+}
+
+.exit-button-spacing-learning {
+  padding-right: 25cm;
+}
+
+img .profile-icon {
+  width: 30 px; 
+  height: 40 px; 
+  border-radius: 50%;
+}
