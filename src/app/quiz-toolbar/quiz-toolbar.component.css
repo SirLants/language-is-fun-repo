@@ -1,6 +1,14 @@
-.progress-bar {
-    background: url('/src/assets/gokuKamehameha.jpg');
-    height: 20px;
-    width: 20px;
-    display: block;
-    }
+
+ .progress-icon {
+    width:65px;
+    height:15x;
+}    
+
+.progress-icon-spacing {
+    padding-right: 5px;
+}
+
+.progress-bar-padding {
+    padding-right: 30cm;
+
+}

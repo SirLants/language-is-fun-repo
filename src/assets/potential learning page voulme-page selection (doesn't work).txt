@@ -1,0 +1,56 @@
+TS:
+
+export class pageSelector {
+  selectedValue: string;
+  
+  pages = [
+  { value: 'page 1', viewValue: '1'},
+  { value: 'page 2', viewValue: '2'},
+  { value: 'page 3', viewValue: '3'},
+  { value: 'page 4', viewValue: '4'},
+  { value: 'page 5', viewValue: '5'},
+
+  ];
+
+}
+
+export class volumeSelector {
+  selectedValue: string;
+  volumes = [
+  { value: 'vol 1', viewValue: '1'},
+  { value: 'vol 2', viewValue: '2'},
+  { value: 'vol 3', viewValue: '3'},
+  { value: 'vol 4', viewValue: '4'},
+  { value: 'vol 5', viewValue: '5'},
+  ];
+
+
+}
+
+
+
+
+
+
+
+
+HTML:
+
+<div>
+  <md-select palceholder="Volume" [(ngModel)] = "selectedValue" name="volume">
+    <md-option *ngFor="let volume of volumes" [value]="volume.value">
+      {{volume.viewValue}}
+    </md-option>
+  </md-select>
+
+<p> Volume: {{selectedValue}} </p> 
+
+
+ <md-select palceholder="Page" [(ngModel)] = "selectedValue" name="page">
+    <md-option *ngFor="let page of pages" [value]="page.value">
+      {{page.viewValue}}
+    </md-option>
+  </md-select>
+
+ <p> Page: {{selectedValue}} </p>
+</div>
