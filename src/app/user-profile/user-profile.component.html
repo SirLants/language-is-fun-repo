@@ -1,5 +1,5 @@
 <div class="body-container">
-  <div fxLayout="row" fxLayoutAlign="space-around center" style="height:800px;">
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="height:650px;">
     <div fxFlex="20" style="height:100%;">
       <div fxLayout="column" fxLayoutAlign="space-around" style="height:100%;">
         <div>
@@ -7,7 +7,7 @@
             <md-card-header>
               <img md-card-avatar>
               <md-card-title>Lance Johnson</md-card-title>
-              <md-card-subtitle>Sensei</md-card-subtitle>
+              <md-card-subtitle>Japanese Sensei</md-card-subtitle>
             </md-card-header>
             <img md-card-image src="/src/assets/bayb.jpg">
             <md-card-actions>
@@ -16,9 +16,7 @@
           </md-card>
         </div>
         <div>
-          <md-card>
-            <md-card-title>Settings</md-card-title>
-            <hr>
+          <md-card style="padding-top:4px;">
             <md-card-actions>
               <button md-button routerLink="user-profile-stats">STATS</button>
               <hr>
@@ -30,7 +28,7 @@
         </div>
       </div>
     </div>
-    <div fxFlex="60" style="height:100%;">
+    <div fxFlex="70" style="height:100%;">
       <router-outlet></router-outlet>
     </div>
   </div>

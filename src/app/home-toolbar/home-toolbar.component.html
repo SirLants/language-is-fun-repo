@@ -1,9 +1,17 @@
 <md-toolbar color="primary">
-  <span routerLink="home-body">Language Is Fun!</span>
-  <span routerLink="home-manga-browser" style="margin-left:30px;">Read Manga</span>
+  <button md-button routerLink="home-body">
+    <span class="toolbar-span">Language Is Fun!</span>
+  </button>
+  <button md-button style="margin-left:30px;" routerLink="home-manga-browser">
+    <span class="toolbar-span">Read Manga</span>
+  </button>
+  
 
   <!-- This fills the remaining space of the current row -->
   <span class="fill-remaining-space"></span>
 
-  <span routerLink="user-profile" style="margin-right:30px;">Profile</span>
+  <button md-button style="margin-right:30px;"  routerLink="user-profile">
+    <img style="width: 40px; border-radius: 50%;" src="/src/assets/images/bayb.jpg">
+    <span style="margin-left:3px;">Lance Johnson</span>
+  </button>
 </md-toolbar>
