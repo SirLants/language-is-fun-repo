@@ -12,6 +12,18 @@ import { UserProfileSocialComponent } 			from './user-profile-social/user-profil
 import { QuizComponent }						from './quiz/quiz.component';
 import { LearningComponent }					from './learning/learning.component';
 
+
+import {QuizScreen1Component}					from './quiz-screen-1/quiz-screen-1.component';
+import {QuizScreen2Component}					from './quiz-screen-2/quiz-screen-2.component';
+import {QuizScreen3Component}					from './quiz-screen-3/quiz-screen-3.component';
+import {QuizScreen4Component}					from './quiz-screen-4/quiz-screen-4.component';
+
+
+import {LearningScreen1Component}				from './learning-screen-1/learning-screen-1.component';
+import {LearningScreen2Component}				from './learning-screen-2/learning-screen-2.component';
+import {LearningScreen3Component}				from './learning-screen-3/learning-screen-3.component';
+
+
 const routes: Routes = [
 	{ path: '', 								redirectTo: 'home',	 							pathMatch: 'full' },
 	{ path: 'home',								component: HomeComponent, 						children: [
@@ -25,8 +37,20 @@ const routes: Routes = [
 			{path: 'user-profile-social',				component: UserProfileSocialComponent}
 		]}
 	]},
-	{ path: 'quiz',								component: QuizComponent },
-	{ path: 'learning',							component: LearningComponent }
+
+	{ path: 'quiz',								component: QuizComponent},
+		{path: '',								redirectTo: 'quiz',			pathMatch: 'full'},
+    	{path: 'quiz-screen-1',					component: QuizScreen1Component },
+		{path: 'quiz-screen-2',					component: QuizScreen2Component },
+		{path: 'quiz-screen-3',					component: QuizScreen3Component },
+		{path: 'quiz-screen-4',				    component: QuizScreen4Component },
+
+	
+
+	{ path: 'learning',							component: LearningComponent },
+		{path: 'learning-screen-1',             component: LearningScreen1Component },
+		{path: 'learning-screen-2',             component: LearningScreen2Component },
+		{path: 'learning-screen-3',             component: LearningScreen3Component },
 ];
 
 @NgModule({

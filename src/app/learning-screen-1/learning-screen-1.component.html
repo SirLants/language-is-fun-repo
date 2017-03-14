@@ -1,0 +1,39 @@
+<md-sidenav-container fullscreen>
+  <learning-toolbar></learning-toolbar>
+
+<div class="body-container">
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="height:800px;">
+    <div fxFlex="80" style="height:100%;">
+      <md-card style="background-color:#F4F5F0">
+        <div fxLayout="row">
+          <div fxFlex>
+            <img src="/src/assets/images/Yotsubato1_panel1.png" style="width:80%;" title="We are nearly there!">
+          </div>
+          <div fxFlex style="padding-left:20px;">
+            <div fxLayout="column">
+              <div fxFlex style="font-size:25px;">
+                <p>
+                   Here is Volume 1 PAges 1 of Yotsuvato! You can hover over the panle to veiw the english translation.
+                   To view the vocab page, please click "Got to Vocab PAge"
+                </p>
+              </div>
+              <div fxFlex style="font-size:25px;">
+                <p>
+                  Stuff relatedt to individual panels
+                </p>
+                <button md-raised-button color="primary" style="margin-left:100px;">
+                  <span class="toolbar-span">Next Panel</span>
+                </button>
+                <button md-raised-button color="accent" routerLink="/learning-screen-2">
+                  <span class="toolbar-span">Go to Vocab Page</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </md-card>
+    </div>
+  </div>
+</div>
+
+</md-sidenav-container>

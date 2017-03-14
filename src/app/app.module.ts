@@ -25,6 +25,13 @@ import { LearningToolbarComponent }     from './learning-toolbar/learning-toolba
 import { LearningBodyComponent }        from './learning-body/learning-body.component';
 
 import 'hammerjs';
+import { QuizScreen1Component } from './quiz-screen-1/quiz-screen-1.component';
+import { QuizScreen2Component } from './quiz-screen-2/quiz-screen-2.component';
+import { QuizScreen3Component } from './quiz-screen-3/quiz-screen-3.component';
+import { QuizScreen4Component } from './quiz-screen-4/quiz-screen-4.component';
+import { LearningScreen1Component } from './learning-screen-1/learning-screen-1.component';
+import { LearningScreen2Component } from './learning-screen-2/learning-screen-2.component';
+import { LearningScreen3Component } from './learning-screen-3/learning-screen-3.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +49,14 @@ import 'hammerjs';
     QuizBodyComponent,
     LearningComponent,
     LearningToolbarComponent,
-    LearningBodyComponent
+    LearningBodyComponent,
+    QuizScreen1Component,
+    QuizScreen2Component,
+    QuizScreen3Component,
+    QuizScreen4Component,
+    LearningScreen1Component,
+    LearningScreen2Component,
+    LearningScreen3Component
   ],
   imports: [
     BrowserModule,

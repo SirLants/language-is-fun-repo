@@ -1,10 +1,13 @@
+<md-sidenav-container fullscreen>
+  <learning-toolbar></learning-toolbar>
+
 <div class="body-container">
   <div fxLayout="row" fxLayoutAlign="space-around center" style="height:800px;">
     <div fxFlex="80" style="height:100%;">
       <md-card style="background-color:#F4F5F0">
         <div fxLayout="row">
           <div fxFlex>
-            <img src="/src/assets/images/Yotsubato1.png" style="width:80%;">
+            <img src="/src/assets/images/Yotsubato1_panel1.png" style="width:80%;">
           </div>
           <div fxFlex style="padding-left:20px;">
             <div fxLayout="column">
@@ -23,10 +26,10 @@
                   If not, click "I'm ready to learn!" and we'll start learning
                   how to read a Japanese Manga panel!
                 </p>
-                <button md-raised-button color="primary" style="margin-left:100px;" routerLink="/quiz">
+                <button md-raised-button color="primary" style="margin-left:100px;">
                   <span class="toolbar-span">I'm ready to learn!</span>
                 </button>
-                <button md-raised-button color="accent" routerLink="/learning-screen-1">
+                <button md-raised-button color="accent">
                   <span class="toolbar-span">I can read it!</span>
                 </button>
               </div>
@@ -37,3 +40,5 @@
     </div>
   </div>
 </div>
+
+</md-sidenav-container>
