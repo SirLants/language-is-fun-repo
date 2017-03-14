@@ -10,7 +10,16 @@ import { UserProfileStatsComponent }			from './user-profile-stats/user-profile-s
 import { UserProfileSocialComponent } 			from './user-profile-social/user-profile-social.component';
 
 import { QuizComponent }						from './quiz/quiz.component';
+import {QuizBodyComponent}						from './quiz-body/quiz-body.component';
+import {QuizBody2Component}						from './quiz-body-2/quiz-body-2.component';
+import {QuizBody3Component}						from './quiz-body-3/quiz-body-3.component';
+import {QuizBody4Component}						from './quiz-body-4/quiz-body-4.component';
+
+
+
 import { LearningComponent }					from './learning/learning.component';
+
+
 
 const routes: Routes = [
 	{ path: '', 								redirectTo: 'home',	 							pathMatch: 'full' },
@@ -25,8 +34,25 @@ const routes: Routes = [
 			{path: 'user-profile-social',				component: UserProfileSocialComponent}
 		]}
 	]},
-	{ path: 'quiz',								component: QuizComponent },
+
+
+
+	{ path: 'quiz',								 component: QuizComponent ,				children: [
+		{ path: '',								 redirectTo: 'quiz-body',				pathMatch: 'full' },
+		{ path: 'quiz-body',                      component: QuizBodyComponent },
+		{ path: 'quiz-body-2',                   component: QuizBody2Component},
+		{ path: 'quiz-body-3',                   component: QuizBody2Component},
+		{ path: 'quiz-body-4',                   component: QuizBody2Component},
+
+	]},
+
+
+	
 	{ path: 'learning',							component: LearningComponent }
+
+
+
+
 ];
 
 @NgModule({
