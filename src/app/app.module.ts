@@ -4,6 +4,7 @@ import { FormsModule }                  from '@angular/forms';
 import { HttpModule }                   from '@angular/http';
 import { MaterialModule }               from '@angular/material';
 import { FlexLayoutModule }             from '@angular/flex-layout';
+import { ChartsModule }                 from 'ng2-charts';
 
 import { AppRoutingModule }             from './app-routing.module';
 
@@ -49,7 +50,8 @@ import 'hammerjs';
     HttpModule,
     AppRoutingModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

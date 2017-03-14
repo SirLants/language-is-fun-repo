@@ -1,3 +1,20 @@
-<p>
-  user-profile-stats works!
-</p>
+<div fxLayout="row">
+  <div fxFlex="45">
+    <canvas baseChart width="400" height="400"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"></canvas>
+  </div>
+  <div fxFlex="45">
+    <md-list>
+      <h3 md-header>Your Data</h3>
+      <md-list-item *ngFor="let lineChart of lineCharts">
+        <md-icon>{{lineChart.icon}}</md-icon>
+        <span>On {{lineChart.day}} you learned {{lineChart.words}} words!</span>
+      </md-list-item>
+    </md-list>
+  </div>
+</div>
