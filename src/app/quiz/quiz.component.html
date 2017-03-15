@@ -1,5 +1,12 @@
-<div class="body-container">
-<div fxLayout="row" fxLayoutAlign="space-around center" style="height:600px;">
-<div fxFlex="80" style="height:100%;">
-<quiz-toolbar></quiz-toolbar>
- <router-outlet></router-outlet>
+<md-sidenav-container fullscreen>
+    <quiz-toolbar></quiz-toolbar>
+    <div class="body-container">
+        <div fxLayout="row" fxLayoutAlign="space-around center" style="height:600px;">
+            <div fxFlex="80" style="height:100%;">
+                <md-card>
+                    <router-outlet></router-outlet>
+                </md-card>
+            </div>
+        </div>
+    </div>
+</md-sidenav-container>

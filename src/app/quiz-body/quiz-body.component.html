@@ -1,70 +1,45 @@
-
-      <md-card>
-      <div fxLayout="column" style="height:550px;">
+<div fxLayout="column" style="height:550px;">
+  <div fxFlex>
+    <div fxLayout="row">
+      <div fxFlex="10">
+          <!-- Empty space cuz lazy -->
+      </div>
+      <div fxFlex="10" style="padding-top:35px;">
+        <md-icon style="font-size:80px;">volume_up</md-icon>
+      </div>
+      <div fxFlex="60">
+        <span style="font-size:120px;">こんにちは</span>
+      </div>
+      <div fxFlex="20">
+        <button md-raised-button color="warn" style="font-size:30px;margin-top:50px;padding-top:10px;padding-bottom:10px;">
+          EASY!
+        </button>
+      </div>
+    </div>
+  </div>
+  <div fxFlex>
+    <div fxLayout="row">
+      <div fxFlex="10">
+      </div>
+      <div fxFlex="40" fxLayout="column" style="height:300px;">
         <div fxFlex>
-          <div fxLayout="row">
-            <div fxFlex="10">
-
-            </div>
-            <div fxFlex="10" style="padding-top:35px;">
-              <md-icon style="font-size:80px;">volume_up</md-icon>
-            </div>
-            <div fxFlex="60">
-              <span style="font-size:120px;">こんにちは</span>
-            </div>
-            <div fxFlex="20">
-              <button md-raised-button color="warn" style="font-size:30px;margin-top:50px;padding-top:10px;padding-bottom:10px;">
-                EASY!
-              </button>
-            </div>
-          </div>
+          <button md-raised-button class="quiz-button">1. Hello</button>
         </div>
         <div fxFlex>
-          <div fxLayout="row">
-            <div fxFlex="10">
-            </div>
-            <div fxFlex="40" fxLayout="column" style="height:300px;">
-              <div fxFlex>
-                <button md-raised-button class="quiz-button">1. Hello</button>
-              </div>
-              <div fxFlex>
-                <button md-raised-button class="quiz-button">2. Goodbye</button>
-              </div>
-            </div>
-            <div fxFlex="37" fxLayout="column">
-              <div fxFlex>
-                <button md-raised-button class="quiz-button">3. See you later</button>
-              </div>
-              <div fxFlex>
-                <button md-raised-button class="quiz-button">4. Good night</button>
-              </div>
-            </div>
-            <div fxFlex="10">
-              <button md-raised-button class="submit-button">Submit</button>
-            </div>
-          </div>
+          <button md-raised-button class="quiz-button">2. Goodbye</button>
         </div>
       </div>
-      </md-card>
-      <!--<md-card>
-        <md-card-content>
-          <p>Put quizzing stuff here</p>
-        </md-card-content>
-        <md-card-actions>
-          <button md-button class="quiz-button">
-            <span>Hello</span>
-          </button>
-          <button md-button class="quiz-button">
-            <span>Goodbye</span>
-          </button>
-        </md-card-actions>
-        <md-card-actions>
-          <button md-button class="quiz-button">
-            <span>Good night</span>
-          </button>
-          <button md-button class="quiz-button">
-            <span>See you later</span>
-          </button>
-        </md-card-actions>
-      </md-card>-->
- 
+      <div fxFlex="37" fxLayout="column">
+        <div fxFlex>
+          <button md-raised-button class="quiz-button">3. See you later</button>
+        </div>
+        <div fxFlex>
+          <button md-raised-button class="quiz-button">4. Good night</button>
+        </div>
+      </div>
+      <div fxFlex="10">
+        <button md-raised-button class="submit-button">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

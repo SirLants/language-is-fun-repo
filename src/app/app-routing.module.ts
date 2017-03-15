@@ -16,9 +16,7 @@ import {QuizBody3Component}						from './quiz-body-3/quiz-body-3.component';
 import {QuizBody4Component}						from './quiz-body-4/quiz-body-4.component';
 
 
-
 import { LearningComponent }					from './learning/learning.component';
-
 
 
 const routes: Routes = [
@@ -34,9 +32,6 @@ const routes: Routes = [
 			{path: 'user-profile-social',				component: UserProfileSocialComponent}
 		]}
 	]},
-
-
-
 	{ path: 'quiz',								 component: QuizComponent ,				children: [
 		{ path: '',								 redirectTo: 'quiz-body',				pathMatch: 'full' },
 		{ path: 'quiz-body',                      component: QuizBodyComponent },
@@ -45,14 +40,7 @@ const routes: Routes = [
 		{ path: 'quiz-body-4',                   component: QuizBody2Component},
 
 	]},
-
-
-	
 	{ path: 'learning',							component: LearningComponent }
-
-
-
-
 ];
 
 @NgModule({
