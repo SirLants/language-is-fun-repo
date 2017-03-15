@@ -25,6 +25,9 @@ import { LearningToolbarComponent }     from './learning-toolbar/learning-toolba
 import { LearningBodyComponent }        from './learning-body/learning-body.component';
 
 import 'hammerjs';
+import { QuizBody2Component } from './quiz-body-2/quiz-body-2.component';
+import { QuizBody3Component } from './quiz-body-3/quiz-body-3.component';
+import { QuizBody4Component } from './quiz-body-4/quiz-body-4.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import 'hammerjs';
     QuizBodyComponent,
     LearningComponent,
     LearningToolbarComponent,
-    LearningBodyComponent
+    LearningBodyComponent,
+    QuizBody2Component,
+    QuizBody3Component,
+    QuizBody4Component
   ],
   imports: [
     BrowserModule,
