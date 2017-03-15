@@ -1,3 +1,38 @@
-<p>
-  quiz-body-4 works!
-</p>
+<div fxLayout="column" style="height:550px;">
+  <div fxFlex>
+    <div fxLayout="row">
+      <div fxFlex="10">
+          <!-- Empty space cuz lazy -->
+      </div>
+      <div fxFlex="10" style="padding-top:35px;">
+        <md-icon style="font-size:80px;">volume_up</md-icon>
+      </div>
+      <div fxFlex="60">
+        <span style="font-size:120px; margin-left:100px;">またね</span>
+      </div>
+      <div fxFlex="20">
+        <button md-raised-button color="warn" style="font-size:30px;margin-top:50px;padding-top:10px;padding-bottom:10px;">
+          EASY!
+        </button>
+      </div>
+    </div>
+  </div>
+  <div fxFlex>
+    <div fxLayout="row">
+      <div fxFlex="10">
+      </div>
+      <div fxFlex="80" fxLayout="column" style="height:300px;">
+        <div fxFlex="20"></div>
+        <div fxFlex="20">
+          <md-input-container style="margin-left:150px;width:50%; font-size:50px;">
+            <input mdInput placeholder="Input would go here">
+          </md-input-container>
+        </div>
+        <div fxFlex="10"></div>
+      </div>
+      <div fxFlex="10">
+        <button md-raised-button class="submit-button" routerLink="/quiz/quiz-body-5">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

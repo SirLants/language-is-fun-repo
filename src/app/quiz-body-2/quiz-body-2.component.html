@@ -1,3 +1,45 @@
-<p>
-  quiz-body-2 works!
-</p>
+<div fxLayout="column" style="height:550px;">
+  <div fxFlex>
+    <div fxLayout="row">
+      <div fxFlex="10">
+          <!-- Empty space cuz lazy -->
+      </div>
+      <div fxFlex="10" style="padding-top:35px;">
+        <md-icon style="font-size:80px;">volume_up</md-icon>
+      </div>
+      <div fxFlex="60">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/CCRKzIr8Eoc" frameborder="0" style="margin-left:95px;"></iframe>
+      </div>
+      <div fxFlex="20">
+        <button md-raised-button color="warn" style="font-size:30px;margin-top:50px;padding-top:10px;padding-bottom:10px;">
+          EASY!
+        </button>
+      </div>
+    </div>
+  </div>
+  <div fxFlex>
+    <div fxLayout="row">
+      <div fxFlex="10">
+      </div>
+      <div fxFlex="40" fxLayout="column" style="height:300px;">
+        <div fxFlex>
+          <button md-raised-button class="quiz-button" mdTooltip="Enjoy the clip, press Submit!">1. No</button>
+        </div>
+        <div fxFlex>
+          <button md-raised-button class="quiz-button" mdTooltip="Enjoy the clip, press Submit!">2. Yes</button>
+        </div>
+      </div>
+      <div fxFlex="37" fxLayout="column">
+        <div fxFlex>
+          <button md-raised-button class="quiz-button" mdTooltip="Enjoy the clip, press Submit!">3. Why?</button>
+        </div>
+        <div fxFlex>
+          <button md-raised-button class="quiz-button" mdTooltip="Enjoy the clip, press Submit!">4. My name is...</button>
+        </div>
+      </div>
+      <div fxFlex="10">
+        <button md-raised-button class="submit-button" routerLink="/quiz/quiz-body-3">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

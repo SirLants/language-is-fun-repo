@@ -1,5 +1,5 @@
 <div fxLayout="row">
-  <div fxFlex="45">
+  <div fxFlex="60">
     <canvas baseChart width="400" height="400"
                 [datasets]="lineChartData"
                 [labels]="lineChartLabels"
@@ -8,7 +8,7 @@
                 [legend]="lineChartLegend"
                 [chartType]="lineChartType"></canvas>
   </div>
-  <div fxFlex="45">
+  <div fxFlex="40">
     <md-list>
       <h3 md-header>Your Data</h3>
       <md-list-item *ngFor="let lineChart of lineCharts">

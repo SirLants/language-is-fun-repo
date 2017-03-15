@@ -20,14 +20,19 @@ import { UserProfileSocialComponent }   from './user-profile-social/user-profile
 import { QuizComponent }                from './quiz/quiz.component';
 import { QuizToolbarComponent }         from './quiz-toolbar/quiz-toolbar.component';
 import { QuizBodyComponent }            from './quiz-body/quiz-body.component';
+import { QuizBody2Component } from './quiz-body-2/quiz-body-2.component';
+import { QuizBody3Component } from './quiz-body-3/quiz-body-3.component';
+import { QuizBody4Component } from './quiz-body-4/quiz-body-4.component';
 import { LearningComponent }            from './learning/learning.component';
 import { LearningToolbarComponent }     from './learning-toolbar/learning-toolbar.component';
 import { LearningBodyComponent }        from './learning-body/learning-body.component';
 
 import 'hammerjs';
-import { QuizBody2Component } from './quiz-body-2/quiz-body-2.component';
-import { QuizBody3Component } from './quiz-body-3/quiz-body-3.component';
-import { QuizBody4Component } from './quiz-body-4/quiz-body-4.component';
+import { LearningBody2Component } from './learning-body-2/learning-body-2.component';
+import { LearningBody3Component } from './learning-body-3/learning-body-3.component';
+import { QuizBody5Component } from './quiz-body-5/quiz-body-5.component';
+import { QuizBody6Component } from './quiz-body-6/quiz-body-6.component';
+
 
 @NgModule({
   declarations: [
@@ -43,12 +48,16 @@ import { QuizBody4Component } from './quiz-body-4/quiz-body-4.component';
     QuizComponent,
     QuizToolbarComponent,
     QuizBodyComponent,
+    QuizBody2Component,
+    QuizBody3Component,
+    QuizBody4Component,
     LearningComponent,
     LearningToolbarComponent,
     LearningBodyComponent,
-    QuizBody2Component,
-    QuizBody3Component,
-    QuizBody4Component
+    LearningBody2Component,
+    LearningBody3Component,
+    QuizBody5Component,
+    QuizBody6Component
   ],
   imports: [
     BrowserModule,
