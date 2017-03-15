@@ -39,6 +39,3 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
-
-# for class
-README_FOR_HCI_TA.txt
