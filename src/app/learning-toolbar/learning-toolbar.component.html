@@ -1,10 +1,13 @@
-<md-toolbar color="primary">
-  <button md-button mdTooltip="Look, no home icon! Doesn't send you home!">
-    <span class="toolbar-span">Language Is Fun!</span>
+<md-toolbar color="primary" style="justify-content: space-between;">
+  <button fxHide.xs md-button mdTooltip="Look, no home icon! Doesn't send you home!">
+    <span class="font-20">Language Is Fun!</span>
   </button>
   
-  <span style="margin-left:390px;">Yotsubato! Volume 1, Page 1</span>
+  <span class="centering-span"></span>
+
+  <span>Yotsubato! Volume 1, Page 1</span>
   <!-- This fills the remaining space of the current row -->
+
   <span class="fill-remaining-space"></span>
 
   <button md-icon-button style="margin-right:30px;" (click)="openGoHome()">

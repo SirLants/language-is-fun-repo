@@ -2,3 +2,36 @@ div.body-container.home{
     padding-left: 100px;
     padding-right: 100px;
 }
+
+div.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+img.height80 {
+    height:80px;
+}
+
+md-card-actions.no-left-margin {
+    margin-left:0px;
+}
+
+md-card-actions.no-bottom-margin {
+    margin-bottom:0px;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom:0;
+}
+
+img.width50{
+    width:50%;
+}
+
+h4.friend-finder-title {
+    margin-top:10px;
+    margin-bottom:12px;
+}

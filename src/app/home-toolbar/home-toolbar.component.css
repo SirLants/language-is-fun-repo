@@ -1,0 +1,12 @@
+md-icon.home {
+    font-size:27px;
+    padding-bottom:7px;
+}
+
+span.banner{
+    padding-left:3px;
+}
+
+span.home-separator{
+    flex: .05 1 auto;
+}

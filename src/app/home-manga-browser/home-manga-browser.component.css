@@ -1,0 +1,18 @@
+md-card.manga-card {
+    margin-bottom:10px;
+}
+
+.crop {
+    width:100%;
+    overflow:hidden;
+}
+
+.body-container.manga {
+    height:1600px;
+    margin-bottom:10px;
+}
+
+img.browser-image {
+    width:600px;
+    height:800px;
+}

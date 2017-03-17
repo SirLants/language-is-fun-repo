@@ -1,37 +1,40 @@
-<div class="body-container">
-  <div fxLayout="row" fxLayoutAlign="space-around center" style="height:800px;">
-    <div fxFlex="80" style="height:100%;">
-      <md-tab-group>
-        <md-tab label="Easy"></md-tab>
-        <md-tab label="Medium"></md-tab>
-        <md-tab label="Hard"></md-tab>
-      </md-tab-group>
-      <div fxLayout="row" fxLayoutAlign="space-between">
-        <div fxFlex="49">
-          <md-card>
-            <md-card-header>
-              <md-card-title>Yotsubato!</md-card-title>
-              <md-card-subtitle>Volumes 1-10</md-card-subtitle>
-            </md-card-header>
-            <img md-card-image src="/src/assets/images/yots-vol1-cover.png">
-            <md-card-content>
-              <p>You are on track to meet your language learning goals!</p>
-            </md-card-content>
-          </md-card>
+<div class="body-container manga" fxLayout="row" fxLayoutAlign="space-around center">
+  <div fxFlex="80" class="height100">
+    <md-tab-group>
+      <md-tab label="Easy"></md-tab>
+      <md-tab label="Medium"></md-tab>
+      <md-tab label="Hard"></md-tab>
+    </md-tab-group>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <md-card class="manga-card" fxFlex="49" fxFill>
+        <md-card-header>
+          <md-card-title>Yotsubato!</md-card-title>
+          <md-card-subtitle>Volumes 1-10</md-card-subtitle>
+        </md-card-header>
+        <div class="crop">
+          <img md-card-image class="browser-image" src="/src/assets/images/yots-vol1-cover.png">
         </div>
-        <div fxFlex="49">
-          <md-card>
-            <md-card-header>
-              <md-card-title>Dragonball</md-card-title>
-              <md-card-subtitle>Volumes 1-25</md-card-subtitle>
-            </md-card-header>
-            <img md-card-image src="/src/assets/images/db-vol1-cover.jpg">
-            <md-card-content>
-              <p>You are on track to meet your language learning goals!</p>
-            </md-card-content>
-          </md-card>
+        <md-card-content>
+          <p>Laugh, live and love with Yotsuba, a fun-loving girl
+             who makes everyday life look like a new and
+             exciting adventure!
+          </p>
+        </md-card-content>
+      </md-card>
+      <md-card fxFlex="49" fxFill>
+        <md-card-header>
+          <md-card-title>Dragonball</md-card-title>
+          <md-card-subtitle>Volumes 1-25</md-card-subtitle>
+        </md-card-header>
+        <div class="crop">
+          <img md-card-image class="browser-image" src="/src/assets/images/db-vol1-cover.jpg">
         </div>
-      </div>
+        <md-card-content>
+          <p>Join Goku on his original journey to find the mysterious
+             Dragonballs, discover his origins, and grow in power!
+          </p>
+        </md-card-content>
+      </md-card>
     </div>
   </div>
 </div>

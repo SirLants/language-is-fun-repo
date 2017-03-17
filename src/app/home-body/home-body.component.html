@@ -1,60 +1,58 @@
 <div class="body-container home">
   <div fxLayout="row" fxLayoutAlign="space-around center" style="height:1125px;">
-    <div fxFlex="20" style="height:100%;">
-      <div fxLayout="column" fxLayoutAlign="space-around" style="height:100%;">
-        <div>
-          <md-card>
-            <md-card-header>
-              <img md-card-avatar>
-              <md-card-title>Lance Johnson</md-card-title>
-              <md-card-subtitle>Japanese Sensei</md-card-subtitle>
-            </md-card-header>
-            <img md-card-image src="/src/assets/images/bayb.jpg">
-          </md-card>
-        </div>
-        <div>
-          <md-card>
-            <md-card-title>Personal Achievement Snapshot</md-card-title>
-            <md-card-content>
-              <p>You currently have: 3500 Points</p>
-              <p>You are rank: 18 in your category</p>
-              <p>You have learned: 55 words this week</p>
-              <p>You have learned: 315 word total</p>
-            </md-card-content>
-            <md-card-actions style="margin:auto; padding-left:30px;">
-              <button md-raised-button routerLink="/learning" color="accent">GO LEARN MORE!</button>
-            </md-card-actions>
-          </md-card>
-        </div>
-        <div>
-          <md-card>
-            <md-card-title>Leaderboard Information</md-card-title>
-            <md-card-subtitle>Your rank amongst peers: 35th overall</md-card-subtitle>
-            <md-card-content>
-              <p style="font-size:20px;">Top Peers</p>
-              <p>1. SayonaraBro1: 50,000 points</p>
-              <p>2. Here2Learn: 40,000 points</p>
-              <p>3. FMA_fan23: 35,000 points</p>
-              <p>4. lazyguy2000: 30,000 points</p>
-              <p>5. dabest1: 25,000 points</p>
-            </md-card-content>
-            <md-card-actions>
-              <button md-raised-button color="accent" style="margin:auto;margin-left:11px;" (click)="openNotImplemented()">GO TO FULL LEADERBOARD</button>
-            </md-card-actions>
-          </md-card>
-        </div>
+    <div fxFlex="20" class="height100" fxLayout="column" fxLayoutAlign="space-around">
+      <div>
+        <md-card>
+          <md-card-header>
+            <img md-card-avatar>
+            <md-card-title>Lance Johnson</md-card-title>
+            <md-card-subtitle>Japanese Sensei</md-card-subtitle>
+          </md-card-header>
+          <img md-card-image src="/src/assets/images/bayb.jpg">
+        </md-card>
+      </div>
+      <div>
+        <md-card>
+          <md-card-title>Personal Achievement Snapshot</md-card-title>
+          <md-card-content>
+            <p>You currently have: 3500 Points</p>
+            <p>You are rank: 18 in your category</p>
+            <p>You have learned: 55 words this week</p>
+            <p>You have learned: 315 word total</p>
+          </md-card-content>
+          <md-card-actions fxLayoutAlign="center center">
+            <button md-raised-button routerLink="/learning" color="accent">GO LEARN MORE!</button>
+          </md-card-actions>
+        </md-card>
+      </div>
+      <div>
+        <md-card>
+          <md-card-title>Leaderboard Information</md-card-title>
+          <md-card-subtitle>Your rank amongst peers: 35th overall</md-card-subtitle>
+          <md-card-content>
+            <h2>Top Peers</h2>
+            <p>1. SayonaraBro1: 50,000 points</p>
+            <p>2. Here2Learn: 40,000 points</p>
+            <p>3. FMA_fan23: 35,000 points</p>
+            <p>4. lazyguy2000: 30,000 points</p>
+            <p>5. dabest1: 25,000 points</p>
+          </md-card-content>
+          <md-card-actions fxLayoutAlign="center center">
+            <button md-raised-button color="accent" (click)="openNotImplemented()">GO TO FULL LEADERBOARD</button>
+          </md-card-actions>
+        </md-card>
       </div>
     </div>
-    <div fxFlex="70" style="height:100%;" fxLayout="column" fxLayoutAlign="space-around">
+    <div fxFlex="70" class="height100" fxLayout="column" fxLayoutAlign="space-around">
       <md-card fxLayout="column" mdTooltip="Only purple buttons and toolbar work!">
-        <div fxLayout="column" style="border-bottom: 1px solid gray;">
+        <div fxLayout="column" class="light-bottom-border">
           <div fxLayout="row" fxLayoutAlign="space-between">
             <md-card-title>CURRENT MATERIAL</md-card-title>
             <button md-icon-button color="accent"><md-icon>star</md-icon></button>
           </div>
           <div fxLayout="row">
             <div fxFlex="30">
-              <img src="src/assets/images/hxh-cover.jpg" style="width:50%;">
+              <img class="width50" src="src/assets/images/hxh-cover.jpg">
             </div>
             <div fxFlex="60" fxLayout="column">
               <h2>Words Completed: {{hxh_words}}/{{hxh_total}}</h2>
@@ -62,20 +60,20 @@
               <h2>Goal: 50 words a week</h2>
             </div>
           </div>
-          <md-card-actions style="margin-left:0px;">
+          <md-card-actions class="no-left-margin">
             <button md-raised-button color="accent" (click)="openNotImplemented()">COURSE HOME</button>
             <button md-raised-button routerLink="/learning" color="primary">GET BACK TO LEARNING</button>
             <button md-raised-button routerLink="/quiz" color="primary">KEEP QUIZZING</button>
           </md-card-actions>
         </div>
-        <div fxLayout="column" style="margin-top:15px;">
+        <div fxLayout="column" class="margin-top-15">
           <div fxLayout="row" fxLayoutAlign="space-between">
             <md-card-title>PAST MATERIAL</md-card-title>
             <button md-icon-button color="accent"><md-icon>star_border</md-icon></button>
           </div>
           <div fxLayout="row">
             <div fxFlex="30">
-              <img src="src/assets/images/yots-vol1-cover.png" style="width:50%;">
+              <img class="width50" src="src/assets/images/yots-vol1-cover.png">
             </div>
             <div fxFlex="60" fxLayout="column">
               <h2>Words Completed: {{yots_words}}/{{yots_total}}</h2>
@@ -83,90 +81,88 @@
               <h2>Goal: Completed!</h2>
             </div>
           </div>
-          <md-card-actions style="margin-left:0px;">
+          <md-card-actions class="no-left-margin no-bottom-margin">
             <button md-raised-button color="accent" (click)="openNotImplemented()">COURSE HOME</button>
             <button md-raised-button routerLink="/learning" color="primary">GET BACK TO LEARNING</button>
             <button md-raised-button routerLink="/quiz" color="primary">KEEP QUIZZING</button>
           </md-card-actions>
         </div>
       </md-card>
-      <div>
-        <md-card>
-          <md-card-title>People you may want to know!</md-card-title>
-          <div fxLayout="column">
-            <div fxLayout="row" fxLayoutAlign="space-between" style="margin-bottom:5px;">
-              <md-card fxLayout="row" fxFlex="30">
-                <div fxFlex>
-                  <img src="src/assets/images/shia1.jpg" style="height:80px;">
-                </div>
-                <div fxFlex>
-                  <h4 style="margin-top:10px;margin-bottom:10px;">Shia Labeouf</h4>
-                  <button md-icon-button color="accent" style="float:right;" (click)="openNotImplemented()">
-                        <md-icon style="font-size:200%;">add</md-icon>
+      <md-card>
+        <md-card-title>People you may want to know!</md-card-title>
+        <div fxLayout="column">
+          <div fxLayout="row" fxLayoutAlign="space-between" class="margin-bottom-5">
+            <md-card fxLayout="row" fxFlex="30">
+              <div fxFlex>
+                <img src="src/assets/images/shia1.jpg" class="height80">
+              </div>
+              <div fxFlex>
+                <h4 class="friend-finder-title">Shia Labeouf</h4>
+                <button md-icon-button class="right" color="accent" (click)="openNotImplemented()">
+                        <md-icon class="font200">add</md-icon>
                       </button>
-                </div>
-              </md-card>
-              <md-card fxLayout="row" fxFlex="30">
-                <div fxFlex>
-                  <img src="src/assets/images/shia1.jpg" style="height:80px;">
-                </div>
-                <div fxFlex>
-                  <h4 style="margin-top:10px;margin-bottom:10px;">Shia Labeouf</h4>
-                  <button md-icon-button color="accent" style="float:right;" (click)="openNotImplemented()">
-                        <md-icon style="font-size:200%;">add</md-icon>
+              </div>
+            </md-card>
+            <md-card fxLayout="row" fxFlex="30">
+              <div fxFlex>
+                <img src="src/assets/images/shia1.jpg" class="height80">
+              </div>
+              <div fxFlex>
+                <h4 class="friend-finder-title">Shia Labeouf</h4>
+                <button md-icon-button class="right" color="accent" (click)="openNotImplemented()">
+                        <md-icon class="font200">add</md-icon>
                     </button>
-                </div>
-              </md-card>
-              <md-card fxLayout="row" fxFlex="30">
-                <div fxFlex>
-                  <img src="src/assets/images/shia1.jpg" style="height:80px;">
-                </div>
-                <div fxFlex>
-                  <h4 style="margin-top:10px;margin-bottom:10px;">Shia Labeouf</h4>
-                  <button md-icon-button color="accent" style="float:right;" (click)="openNotImplemented()">
-                        <md-icon style="font-size:200%;">add</md-icon>
+              </div>
+            </md-card>
+            <md-card fxLayout="row" fxFlex="30">
+              <div fxFlex>
+                <img src="src/assets/images/shia1.jpg" class="height80">
+              </div>
+              <div fxFlex>
+                <h4 class="friend-finder-title">Shia Labeouf</h4>
+                <button md-icon-button class="right" color="accent" (click)="openNotImplemented()">
+                        <md-icon class="font200">add</md-icon>
                     </button>
-                </div>
-              </md-card>
-            </div>
-            <div fxLayout="row" fxLayoutAlign="space-between">
-              <md-card fxLayout="row" fxFlex="30">
-                <div fxFlex>
-                  <img src="src/assets/images/shia1.jpg" style="height:80px;">
-                </div>
-                <div fxFlex>
-                  <h4 style="margin-top:10px;margin-bottom:10px;">Shia Labeouf</h4>
-                  <button md-icon-button color="accent" style="float:right;" (click)="openNotImplemented()">
-                        <md-icon style="font-size:200%;">add</md-icon>
-                    </button>
-                </div>
-              </md-card>
-              <md-card fxLayout="row" fxFlex="30">
-                <div fxFlex>
-                  <img src="src/assets/images/shia1.jpg" style="height:80px;">
-                </div>
-                <div fxFlex>
-                  <h4 style="margin-top:10px;margin-bottom:10px;">Shia Labeouf</h4>
-                  <button md-icon-button color="accent" style="float:right;" (click)="openNotImplemented()">
-                        <md-icon style="font-size:200%;">add</md-icon>
-                    </button>
-                </div>
-              </md-card>
-              <md-card fxLayout="row" fxFlex="30">
-                <div fxFlex>
-                  <img src="src/assets/images/shia1.jpg" style="height:80px;">
-                </div>
-                <div fxFlex>
-                  <h4 style="margin-top:10px;margin-bottom:10px;">Shia Labeouf</h4>
-                  <button md-icon-button color="accent" style="float:right;" (click)="openNotImplemented()">
-                        <md-icon style="font-size:200%;">add</md-icon>
-                    </button>
-                </div>
-              </md-card>
-            </div>
+              </div>
+            </md-card>
           </div>
-        </md-card>
-      </div>
+          <div fxLayout="row" fxLayoutAlign="space-between">
+            <md-card fxLayout="row" fxFlex="30">
+              <div fxFlex>
+                <img src="src/assets/images/shia1.jpg" class="height80">
+              </div>
+              <div fxFlex>
+                <h4 class="friend-finder-title">Shia Labeouf</h4>
+                <button md-icon-button class="right" color="accent" (click)="openNotImplemented()">
+                        <md-icon class="font200">add</md-icon>
+                    </button>
+              </div>
+            </md-card>
+            <md-card fxLayout="row" fxFlex="30">
+              <div fxFlex>
+                <img src="src/assets/images/shia1.jpg" class="height80">
+              </div>
+              <div fxFlex>
+                <h4 class="friend-finder-title">Shia Labeouf</h4>
+                <button md-icon-button class="right" color="accent" (click)="openNotImplemented()">
+                        <md-icon class="font200">add</md-icon>
+                    </button>
+              </div>
+            </md-card>
+            <md-card fxLayout="row" fxFlex="30">
+              <div fxFlex>
+                <img src="src/assets/images/shia1.jpg" class="height80">
+              </div>
+              <div fxFlex>
+                <h4 class="friend-finder-title">Shia Labeouf</h4>
+                <button md-icon-button class="right" color="accent" (click)="openNotImplemented()">
+                        <md-icon class="font200">add</md-icon>
+                    </button>
+              </div>
+            </md-card>
+          </div>
+        </div>
+      </md-card>
     </div>
   </div>
 </div>

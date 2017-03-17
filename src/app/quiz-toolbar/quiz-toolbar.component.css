@@ -1,0 +1,19 @@
+img.goku-icon {
+    height:80%;
+    margin-left:10px;
+}
+
+img.frieza-icon {
+    height:78%;
+    margin-left:2px;
+}
+
+md-progress-bar.quiz-progress {
+    width:80%;
+    margin-left:2px;
+}
+
+button.exit-to-app {
+    margin-left:10px;
+    margin-right:30px;
+}

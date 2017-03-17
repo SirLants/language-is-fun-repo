@@ -1,18 +1,20 @@
 <md-toolbar color="primary">
-  <button md-button routerLink="home-body">
-    <md-icon style="font-size:27px; padding-bottom:7px;">home</md-icon>
-    <span class="toolbar-span" style="padding-left:3px;">Language Is Fun!</span>
+  <button md-button routerLink="/">
+    <md-icon class="home">home</md-icon>
+    <span class="font-20 banner">Language Is Fun!</span>
   </button>
-  <button md-button style="margin-left:30px;" routerLink="home-manga-browser">
-    <span class="toolbar-span">Read Manga</span>
+
+  <span class="home-separator"></span>
+  <button md-button routerLink="home-manga-browser">
+    <span class="font-20">Read Manga</span>
   </button>
   
 
   <!-- This fills the remaining space of the current row -->
   <span class="fill-remaining-space"></span>
 
-  <button md-button style="margin-right:30px;"  routerLink="user-profile">
-    <img style="width: 40px; border-radius: 50%;" src="/src/assets/images/bayb.jpg">
-    <span style="margin-left:3px;">Lance Johnson</span>
+  <button md-button routerLink="user-profile">
+    <img class="user-image" src="/src/assets/images/bayb.jpg">
+    <span class="user-name">Lance Johnson</span>
   </button>
 </md-toolbar>
