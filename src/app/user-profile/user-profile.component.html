@@ -11,18 +11,18 @@
             </md-card-header>
             <img md-card-image src="/src/assets/images/bayb.jpg">
             <md-card-actions>
-              <button md-button mdTooltip="Only stats, settings, and social work">UPDATE PROFILE PICTURE</button>
+              <button md-button (click)="openNotImplemented()">UPDATE PROFILE PICTURE</button>
             </md-card-actions>
           </md-card>
         </div>
         <div>
           <md-card style="padding-top:4px;">
             <md-card-actions>
-              <button md-button routerLink="user-profile-stats">STATS</button>
+              <button md-button routerLink="user-profile-stats" mdTooltip="Example screens only">STATS</button>
               <hr>
-              <button md-button routerLink="user-profile-settings">SETTINGS</button>
+              <button md-button routerLink="user-profile-settings" mdTooltip="Example screens only">SETTINGS</button>
               <hr>
-              <button md-button routerLink="user-profile-social">SOCIAL</button>
+              <button md-button routerLink="user-profile-social" mdTooltip="Example screens only">SOCIAL</button>
             </md-card-actions>
           </md-card>
         </div>

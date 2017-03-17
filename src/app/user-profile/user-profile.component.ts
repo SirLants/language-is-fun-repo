@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }      from '@angular/core';
+import { DialogsService }         from '../services/dialogs.service';
 
 @Component({
   selector: 'user-profile',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor() { }
+  public result: any;
+
+  constructor(private dialogsService: DialogsService) { }
+
+  openNotImplemented(){
+    this.dialogsService
+      .notImplemented()
+      .subscribe(res => this.result = res);
+  }
 
   ngOnInit() {
   }

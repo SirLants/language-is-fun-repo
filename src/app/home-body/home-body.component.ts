@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }      from '@angular/core';
+import { DialogsService }         from '../services/dialogs.service';
 
 @Component({
   selector: 'app-home-body',
@@ -14,7 +15,15 @@ export class HomeBodyComponent implements OnInit {
   public yots_total:number = 200;
   public yots_progress:number = ((this.yots_words/this.yots_total)*100);
 
-  constructor() { }
+  public result: any;
+
+  constructor(private dialogsService: DialogsService) { }
+
+  public openNotImplemented(){
+    this.dialogsService
+      .notImplemented()
+      .subscribe(res => this.result = res);
+  }
 
   ngOnInit() {
   }

@@ -1,23 +1,11 @@
-<div fxLayout="row">
+<div fxLayout="row" fxLayoutAlign="space-between">
   <div fxFlex>
     <img src="/src/assets/images/Yotsubato1.png" style="width:80%;">
   </div>
   <div fxFlex style="padding-left:20px;">
     <div fxLayout="column">
       <div fxFlex style="font-size:25px;">
-        <p>
-          To start, we are going to have have you read the very first panel of Yotsubato and see if you can read the panel to the left.
-          Click either but when you are ready.
-        </p>
-      </div>
-      <div fxFlex style="font-size:25px;">
-        
-        <button md-raised-button color="primary" style="margin-left:100px;" mdTooltip="Not implemented, need sleep, have mercy.">
-                  <span class="toolbar-span">I'm ready to learn!</span>
-                </button>
-        <button md-raised-button color="accent" routerLink="/quiz" mdTooltip="This still works, sends to quizzing.">
-                  <span class="toolbar-span">I can read it!</span>
-                </button>
+        <button md-raised-button color="accent" (click)="openDialog()"><span class="toolbar-span">Open Dialog</span></button>
       </div>
     </div>
   </div>

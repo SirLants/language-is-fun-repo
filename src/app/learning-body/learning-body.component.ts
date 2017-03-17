@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { MdDialog }          from '@angular/material';
+import { Component, OnInit, ViewContainerRef }              from '@angular/core';
+import { MdDialog, MdDialogRef, MdDialogConfig }            from '@angular/material';
+import { CanYouReadDialog }                                  from '../dialogs/learning/can-you-read/can-you-read.component';
 
 @Component({
   selector: 'learning-body',
@@ -7,26 +8,24 @@ import { MdDialog }          from '@angular/material';
   styleUrls: ['./learning-body.component.css']
 })
 export class LearningBodyComponent implements OnInit {
+  dialogRef: MdDialogRef<any>;
 
-  constructor(public dialog: MdDialog) { }
+  constructor(
+    public dialog: MdDialog,
+    public viewContainerRef: ViewContainerRef) { }
 
-  openDialog() {
-    this.dialog.open(DialogComponent);
+  openDialog(key) {
+    let config = new MdDialogConfig();
+    config.viewContainerRef = this.viewContainerRef;
+
+    this.dialogRef = this.dialog.open(CanYouReadDialog, config);
+
+    this.dialogRef.afterClosed().subscribe(result => {
+      this.dialogRef = null;
+    });
   }
 
   ngOnInit() {
   }
 
 }
-
-@Component({
-  selector: 'dialog1',
-  template:`
-    <md-dialog-content>
-      Can you read the panel to the left? If you can already read all of the words in this panel, click "I can read it!", and we'll
-      do a quick quiz to make sure you are ready to go! If not, click "I'm ready to learn!" and we'll start learning
-      how to read a Japanese Manga panel!
-    </md-dialog-content>
-  `
-})
-export class DialogComponent {}

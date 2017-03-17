@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }      from '@angular/core';
+import { DialogsService }         from '../services/dialogs.service';
 
 @Component({
   selector: 'learning-toolbar',
@@ -6,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learning-toolbar.component.css']
 })
 export class LearningToolbarComponent implements OnInit {
+  
+  public result:any;
 
-  constructor() { }
+  constructor(private dialogsService: DialogsService) { }
+
+  public openGoHome() {
+    this.dialogsService
+      .goHome()
+      .subscribe(res => this.result = res);
+  }
 
   ngOnInit() {
   }
