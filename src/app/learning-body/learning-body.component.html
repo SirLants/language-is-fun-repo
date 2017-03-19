@@ -1,12 +1,10 @@
-<div fxLayout="row" fxLayoutAlign="space-between">
-  <div fxFlex>
-    <img src="/src/assets/images/Yotsubato1.png" style="width:80%;">
+<div fxLayout="row">
+  <div fxFlex="50" fxLayoutAlign="center center">
+    <img src="/src/assets/images/Yotsubato1.png" [style.width.%]='80'>
   </div>
-  <div fxFlex style="padding-left:20px;">
-    <div fxLayout="column">
-      <div fxFlex style="font-size:25px;">
-        <button md-raised-button color="accent" (click)="openDialog()"><span class="font-20">Open Dialog</span></button>
-      </div>
-    </div>
+  <div fxFlex="50" fxLayoutAlign="center center">
+    <button md-raised-button class="submit-button" (click)="openCanYouRead()">
+      <span>Continue</span>
+    </button>
   </div>
 </div>

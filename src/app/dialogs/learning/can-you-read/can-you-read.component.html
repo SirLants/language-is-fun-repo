@@ -1,9 +1,11 @@
-<md-dialog-content>
-  Can you read the panel to the left? If you can already read all of the words in this panel, click "I can read it!", and we'll
-  do a quick quiz to make sure you are ready to go! If not, click "I'm ready to learn!" and we'll start learning how to read
-  a Japanese Manga panel!
+<md-dialog-content [style.width.px]='550'>
+  <h2>Can you read the panel to the left?</h2> 
+  <h4>If you can already read all of the words in this panel, click "I can read it!", and we'll
+  do a quick quiz to make sure you are ready to go!</h4> 
+  <h4>If not, click "I'm ready to learn!" and we'll start learning how to read
+  a Japanese Manga panel!</h4>
 </md-dialog-content>
-<md-dialog-actions>
+<md-dialog-actions fxLayoutAlign="space-around center">
   <button md-raised-button color="primary" md-dialog-close routerLink="/learning/learning-body-2">
     <span class="font-20">I'm ready to learn!</span>
   </button>

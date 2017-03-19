@@ -1,3 +1,18 @@
-<p>
-  learning-body-2 works!
-</p>
+<div fxLayout="row" fxLayoutAlign="space-between center" [style.height.px]='550'>
+  <div fxFlex="20" fxLayoutAlign="center center">
+    <button md-raised-button color="primary" routerLink="/learning/learning-body-3">
+      View Vocab List
+    </button>
+  </div>
+  <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
+    <img src={{activeLink}} [style.width.%]='80'>
+    <button md-button color="primary" (click)="flipLanguage()" [style.margin-top.px]='5'>
+      Flip Language
+    </button>
+  </div>
+  <div fxFlex="20" fxLayoutAlign="center center">
+    <button md-raised-button color="accent" (click)="openQuizOrLearn()">
+      Continue
+    </button>
+  </div>
+</div>

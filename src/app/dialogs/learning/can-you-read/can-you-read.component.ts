@@ -8,7 +8,7 @@ import { MdDialogRef }       from '@angular/material';
 })
 export class CanYouReadDialog implements OnInit {
 
-  constructor(public dialogRef: MdDialogRef<any>) { }
+  constructor(public dialogRef: MdDialogRef<CanYouReadDialog>) { }
 
   ngOnInit() {
   }

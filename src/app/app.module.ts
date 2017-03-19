@@ -39,10 +39,10 @@ import { QuizBody6Component }           from './quiz-body-6/quiz-body-6.componen
 import { CanYouReadDialog }             from './dialogs/learning/can-you-read/can-you-read.component';
 import { NotImplementedDialog }         from './dialogs/global/not-implemented/not-implemented.component';
 import { GoHomeDialog }                 from './dialogs/global/go-home/go-home.component';   
+import { QuizOrLearnDialog }            from './dialogs/learning/quiz-or-learn/quiz-or-learn.component';
 
 //These are all of our custom services
 import { DialogsService }               from './services/dialogs.service';
-
 
 @NgModule({
   declarations: [
@@ -70,7 +70,8 @@ import { DialogsService }               from './services/dialogs.service';
     QuizBody6Component,
     CanYouReadDialog,
     NotImplementedDialog,
-    GoHomeDialog
+    GoHomeDialog,
+    QuizOrLearnDialog
   ],
   imports: [
     BrowserModule,
@@ -83,12 +84,15 @@ import { DialogsService }               from './services/dialogs.service';
   ],
   exports: [
     NotImplementedDialog,
-    GoHomeDialog
+    GoHomeDialog,
+    QuizOrLearnDialog,
+    CanYouReadDialog
   ],
   entryComponents: [
     CanYouReadDialog,
     NotImplementedDialog,
-    GoHomeDialog
+    GoHomeDialog,
+    QuizOrLearnDialog
   ],
   providers: [
     DialogsService
