@@ -1,9 +1,9 @@
 <md-sidenav-container fullscreen>
   <learning-toolbar></learning-toolbar>
   <div class="body-container">
-    <div fxLayout="row" fxLayoutAlign="space-around center" style="height:800px;">
+    <div fxLayout="row" fxLayoutAlign="space-around center" [style.height.px]='800'>
       <div fxFlex="80" class="height100">
-        <md-card style="background-color:#F4F5F0">
+        <md-card [style.background-color]="'#F4F5F0'">
           <router-outlet></router-outlet>
         </md-card>
       </div>

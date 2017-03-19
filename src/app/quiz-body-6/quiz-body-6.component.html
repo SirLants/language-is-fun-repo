@@ -1,48 +1,42 @@
 <div fxLayout="column" style="height:550px;">
-  <div fxFlex>
-    <div fxLayout="row">
-      <div fxFlex="10">
-          <!-- Empty space cuz lazy -->
-      </div>
-      <div fxFlex="10" style="padding-top:35px;">
-        <md-icon style="font-size:80px;">volume_up</md-icon>
-      </div>
-      <div fxFlex="60" style="padding-top:20px;">
-        <span style="font-size:100px;">See you later!</span>
-      </div>
-      <div fxFlex="20">
-        <button md-raised-button color="warn" style="font-size:30px;margin-top:50px;padding-top:10px;padding-bottom:10px;">
-          EASY!
-        </button>
-      </div>
+  <div fxFlex="40" fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="10">
+      <!-- Empty space cuz lazy -->
+    </div>
+    <div fxFlex="10">
+      <md-icon class="md-80">volume_up</md-icon>
+    </div>
+    <div fxFlex="55">
+      <span style="font-size:100px;">See you later!</span>
+    </div>
+    <div fxFlex="15">
     </div>
   </div>
-  <div fxFlex>
-    <div fxLayout="row">
-      <div fxFlex="10">
+  <div fxFlex="60" fxLayout="row" fxLayout="center" 
+       mdTooltip="This is a screen to drive home what you just learned.">
+    <div fxFlex="10">
+    </div>
+    <div fxFlex="70" fxLayout="column" [style.height.px]='300'>
+      <div fxFlex="20"></div>
+      <div fxFlex="20">
+        <md-input-container class="quiz-input">
+          <input mdInput placeholder="またね">
+        </md-input-container>
       </div>
-      <div fxFlex="80" fxLayout="column" style="height:300px;">
-        <div fxFlex="20"></div>
-        <div fxFlex="20">
-          <md-input-container style="width:50%; font-size:25px;">
-            <input mdInput placeholder="またね">
-          </md-input-container>
-        </div>
-        <div fxFlex="10"></div>
-        <div fxFlex="40">
-          <button md-raised-button>に</button>
-          <button md-raised-button style="margin-left:3px;">む</button>
-          <button md-raised-button style="margin-left:3px;">ま</button>
-          <button md-raised-button style="margin-left:3px;">せ</button>
-          <button md-raised-button style="margin-left:3px;">ら</button>
-          <button md-raised-button style="margin-left:3px;">ね</button>
-          <button md-raised-button style="margin-left:3px;">わ</button>
-          <button md-raised-button style="margin-left:3px;">た</button>
-        </div>
+      <div fxFlex="10"></div>
+      <div fxFlex="40">
+        <button md-raised-button>に</button>
+        <button md-raised-button>ま</button>
+        <button md-raised-button>せ</button>
+        <button md-raised-button>ら</button>
+        <button md-raised-button>む</button>
+        <button md-raised-button>を</button>
+        <button md-raised-button>わ</button>
+        <button md-raised-button>き</button>
       </div>
-      <div fxFlex="10">
-        <button md-raised-button class="submit-button" routerLink="/">Submit</button>
-      </div>
+    </div>
+    <div fxFlex="20" fxLayoutAlign="center center">
+      <button md-raised-button class="submit-button" routerLink="/">Submit</button>
     </div>
   </div>
 </div>

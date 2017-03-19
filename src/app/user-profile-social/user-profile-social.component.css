@@ -1,0 +1,29 @@
+.conversation-wrapper{
+    border: 1px solid lightblue; 
+    padding:5px; 
+    border-radius:3px;
+    margin-top:10px;
+}
+
+md-card.sender {
+    background-color:beige;
+    float:left;
+}
+
+md-card.receiver {
+    background-color:chartreuse;
+    float:right;
+}
+
+md-input-container.social {
+    width:80%;
+    font-size:150%;
+}
+
+md-card.friend-picker {
+    height:125px;
+}
+
+md-card.inactive {
+    background-color:darkgray;
+}

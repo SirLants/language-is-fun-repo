@@ -56,6 +56,30 @@ button span.user-name{
   border-bottom: 1px solid gray;
 }
 
+.margin-bottom-7 {
+  margin-bottom: 7px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-top-0{
+  margin-top: 0px;
+}
+
+.margin-top-5{
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-left40{
+  margin-left:40%;
+}
+
 .padding-top-4 {
   padding-top: 4px;
 }
@@ -64,4 +88,25 @@ button span.user-name{
   float:right;
 }
 
+.width-80 {
+  width: 80px;
+
+}
+
+.width-100 {
+  width: 100px;
+}
+
+
+
 /* End all generic global styles */
+
+/* Icon adjustments, keep these */
+
+md-icon.md-80 {
+  font-size:80px;
+  width:80px;
+  height:80px;
+}
+
+/* End Icon adjustments*/

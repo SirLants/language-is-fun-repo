@@ -1,6 +1,6 @@
 <div fxLayout="row">
   <div fxFlex="60">
-    <canvas baseChart width="400" height="400"
+    <canvas baseChart
                 [datasets]="lineChartData"
                 [labels]="lineChartLabels"
                 [options]="lineChartOptions"
@@ -12,7 +12,7 @@
     <md-list>
       <h3 md-header>Your Data</h3>
       <md-list-item *ngFor="let lineChart of lineCharts">
-        <md-icon>{{lineChart.icon}}</md-icon>
+        <md-icon [style.margin-right.px]='4'>{{lineChart.icon}}</md-icon>
         <span>On {{lineChart.day}} you learned {{lineChart.words}} words!</span>
       </md-list-item>
     </md-list>

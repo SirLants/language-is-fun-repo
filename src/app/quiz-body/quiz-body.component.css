@@ -6,6 +6,13 @@
 
 .submit-button{
     font-size:30px;
-    margin-top:100px;
     background-color: #4CAF50;
+}
+
+div.quiz-frame {
+    flex-wrap:wrap;
+}
+
+div.quiz-frame div:nth-child(n+4){
+    margin-left:10px;
 }

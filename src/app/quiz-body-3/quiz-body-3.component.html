@@ -1,48 +1,44 @@
 <div fxLayout="column" style="height:550px;">
-  <div fxFlex>
-    <div fxLayout="row">
-      <div fxFlex="10">
-          <!-- Empty space cuz lazy -->
-      </div>
-      <div fxFlex="10" style="padding-top:35px;">
-        <md-icon style="font-size:80px;">volume_up</md-icon>
-      </div>
-      <div fxFlex="60">
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/KTNCQZdGSv4" frameborder="0" style="margin-left:95px;"></iframe>
-      </div>
-      <div fxFlex="20">
-        <button md-raised-button color="warn" style="font-size:30px;margin-top:50px;padding-top:10px;padding-bottom:10px;">
+  <div fxFlex="40" fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="5">
+      <!-- Empty space cuz lazy -->
+    </div>
+    <div fxFlex="10">
+      <md-icon class="md-80">volume_up</md-icon>
+    </div>
+    <div fxFlex="60" fxLayoutAlign="center center">
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/KTNCQZdGSv4" frameborder="0"></iframe>
+    </div>
+    <div fxFlex="15">
+      <button md-raised-button color="warn" [style.font-size.px]='30'>
           EASY!
         </button>
-      </div>
     </div>
   </div>
-  <div fxFlex>
-    <div fxLayout="row">
-      <div fxFlex="10">
+  <div fxFlex="60" fxLayout="row" fxLayout="center">
+    <div fxFlex="10">
+    </div>
+    <div fxFlex="70" fxLayout="column" [style.height.px]='300'>
+      <div fxFlex="20"></div>
+      <div fxFlex="20">
+        <md-input-container class="quiz-input">
+          <input mdInput placeholder="Input would go here">
+        </md-input-container>
       </div>
-      <div fxFlex="80" fxLayout="column" style="height:300px;">
-        <div fxFlex="20"></div>
-        <div fxFlex="20">
-          <md-input-container style="width:50%; font-size:25px;">
-            <input mdInput placeholder="Input would go here">
-          </md-input-container>
-        </div>
-        <div fxFlex="10"></div>
-        <div fxFlex="40">
-          <button md-raised-button>に</button>
-          <button md-raised-button style="margin-left:3px;">む</button>
-          <button md-raised-button style="margin-left:3px;">ま</button>
-          <button md-raised-button style="margin-left:3px;">せ</button>
-          <button md-raised-button style="margin-left:3px;">ら</button>
-          <button md-raised-button style="margin-left:3px;">を</button>
-          <button md-raised-button style="margin-left:3px;">わ</button>
-          <button md-raised-button style="margin-left:3px;">き</button>
-        </div>
+      <div fxFlex="10"></div>
+      <div fxFlex="40">
+        <button md-raised-button>に</button>
+        <button md-raised-button>む</button>
+        <button md-raised-button>ま</button>
+        <button md-raised-button>せ</button>
+        <button md-raised-button>ら</button>
+        <button md-raised-button>を</button>
+        <button md-raised-button>わ</button>
+        <button md-raised-button>き</button>
       </div>
-      <div fxFlex="10">
-        <button md-raised-button class="submit-button" routerLink="/quiz/quiz-body-4">Submit</button>
-      </div>
+    </div>
+    <div fxFlex="20" fxLayoutAlign="center center">
+      <button md-raised-button class="submit-button" routerLink="/quiz/quiz-body-4">Submit</button>
     </div>
   </div>
 </div>
