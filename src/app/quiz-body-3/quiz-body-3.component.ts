@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuizService }          from "../services/quiz.service";
 
 @Component({
   selector: 'app-quiz-body-3',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizBody3Component implements OnInit {
 
-  constructor() { }
+  quizProgress:number = 2;
 
-  ngOnInit() {
+  constructor(private _quizService: QuizService) {
+    
   }
 
+  ngOnInit() {
+    this._quizService.insertData(this.quizProgress);
+  }
 }

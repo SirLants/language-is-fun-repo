@@ -43,6 +43,7 @@ import { QuizOrLearnDialog }            from './dialogs/learning/quiz-or-learn/q
 
 //These are all of our custom services
 import { DialogsService }               from './services/dialogs.service';
+import { QuizService }                  from './services/quiz.service';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import { DialogsService }               from './services/dialogs.service';
     QuizOrLearnDialog
   ],
   providers: [
-    DialogsService
+    DialogsService,
+    QuizService
   ],
   bootstrap: [AppComponent]
 })
