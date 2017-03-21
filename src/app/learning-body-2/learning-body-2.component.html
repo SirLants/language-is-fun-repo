@@ -5,7 +5,19 @@
     </button>
   </div>
   <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
-    <img src={{activeLink}} [style.width.%]='80'>
+    <div class="snippet-wrapper">
+      <img src={{activeLink}}>
+      <div class="word-wrap mou">
+      </div>
+      <div class="word-wrap sugu">
+      </div>
+      <div class="word-wrap da">
+      </div>
+      <div class="word-wrap zo">
+      </div>
+      <div class="word-wrap extender">
+      </div>
+    </div>
     <button md-button color="primary" (click)="flipLanguage()" [style.margin-top.px]='5'>
       Flip Language
     </button>
