@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SidenavService }               from '../services/sidenav.service';
 
 @Component({
   selector: 'learning',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learning.component.css']
 })
 export class LearningComponent implements OnInit {
+  @ViewChild('appendix') public sidenav;
+  public appendixArrow:string;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(public _sidenavService: SidenavService) {
+    
   }
 
+
+  ngOnInit() {
+    this._sidenavService.sidenav = this.sidenav;
+  }
+
+  toggleAppendix(){
+    this.sidenav.toggle();
+    this._sidenavService.setBoolean(true);
+  }
 }

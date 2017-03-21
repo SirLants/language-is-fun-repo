@@ -1,0 +1,23 @@
+<div fxLayout="row" fxFill>
+  <div fxLayoutAlign="center center" *ngIf="showButton">
+    <button md-button class="appendix-button" (click)="toggleAppendix()">
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <md-icon>arrow_forward</md-icon>
+        <span>Close</span>
+      </div>
+    </button>
+  </div>
+<div fxLayout="column" fxFill>
+  <div fxLayoutAlign="center center">
+    <h2>Appendix</h2>
+  </div>
+  <div>
+    <h4>Subcontent</h4>
+    <span>Content within subcontent</span>
+  </div>
+  <div>
+    <h4>Subcontent</h4>
+    <span>Content within subcontent</span>
+  </div>
+</div>
+</div>

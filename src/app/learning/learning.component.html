@@ -1,4 +1,7 @@
 <md-sidenav-container fullscreen>
+  <md-sidenav #appendix align="end" [style.width.%]='40'>
+    <appendix></appendix>
+  </md-sidenav>
   <learning-toolbar></learning-toolbar>
   <div class="body-container">
     <div fxLayout="row" fxLayoutAlign="space-around center" [style.height.px]='600'>
@@ -8,5 +11,11 @@
         </md-card>
       </div>
     </div>
+    <button md-button class="appendix-button" (click)="toggleAppendix()">
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <md-icon>arrow_back</md-icon>
+        <span>Appendix</span>
+      </div>
+    </button>
   </div>
 </md-sidenav-container>

@@ -1,4 +1,4 @@
-<md-toolbar color="primary">
+<md-toolbar color="primary" class="home-toolbar">
   <button md-button routerLink="/">
     <md-icon class="home">home</md-icon>
     <span class="font-20 banner">Language Is Fun!</span>
@@ -7,6 +7,9 @@
   <span class="home-separator"></span>
   <button md-button routerLink="home-manga-browser">
     <span class="font-20">Read Manga</span>
+  </button>
+  <button md-button routerLink="home-appendix">
+    <span [style.font-size.px]='20'>Appendix</span>
   </button>
   
 

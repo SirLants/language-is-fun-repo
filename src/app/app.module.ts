@@ -34,6 +34,8 @@ import { LearningBody2Component }       from './learning-body-2/learning-body-2.
 import { LearningBody3Component }       from './learning-body-3/learning-body-3.component';
 import { QuizBody5Component }           from './quiz-body-5/quiz-body-5.component';
 import { QuizBody6Component }           from './quiz-body-6/quiz-body-6.component';
+import { AppendixComponent }            from './appendix/appendix.component';
+import { HomeAppendixComponent } from './home-appendix/home-appendix.component';
 
 //All of these are dialogs because I have no clue how to make separate dialog components in the same component yet
 import { CanYouReadDialog }             from './dialogs/learning/can-you-read/can-you-read.component';
@@ -44,6 +46,7 @@ import { QuizOrLearnDialog }            from './dialogs/learning/quiz-or-learn/q
 //These are all of our custom services
 import { DialogsService }               from './services/dialogs.service';
 import { QuizService }                  from './services/quiz.service';
+import { SidenavService }               from './services/sidenav.service';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,9 @@ import { QuizService }                  from './services/quiz.service';
     CanYouReadDialog,
     NotImplementedDialog,
     GoHomeDialog,
-    QuizOrLearnDialog
+    QuizOrLearnDialog,
+    AppendixComponent,
+    HomeAppendixComponent
   ],
   imports: [
     BrowserModule,
@@ -97,7 +102,8 @@ import { QuizService }                  from './services/quiz.service';
   ],
   providers: [
     DialogsService,
-    QuizService
+    QuizService,
+    SidenavService
   ],
   bootstrap: [AppComponent]
 })

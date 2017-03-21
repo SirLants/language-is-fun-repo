@@ -4,6 +4,7 @@ import { RouterModule, Routes }					from '@angular/router';
 import { HomeComponent }						from './home/home.component';
 import { HomeBodyComponent }					from './home-body/home-body.component';
 import { HomeMangaBrowserComponent }			from './home-manga-browser/home-manga-browser.component';
+import { HomeAppendixComponent }				from './home-appendix/home-appendix.component';
 import { UserProfileComponent }					from './user-profile/user-profile.component';
 import { UserProfileSettingsComponent }			from './user-profile-settings/user-profile-settings.component';
 import { UserProfileStatsComponent }			from './user-profile-stats/user-profile-stats.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
 		{ path: '',									redirectTo: 'home-body',							pathMatch: 'full' },
 		{ path: 'home-body', 		    			component: HomeBodyComponent },
 		{ path: 'home-manga-browser',    			component: HomeMangaBrowserComponent },
+		{ path: 'home-appendix',					component: HomeAppendixComponent },
 		{ path: 'user-profile', 					component: UserProfileComponent, 					children: [
 			{ path: '',									redirectTo: 'user-profile-settings',				pathMatch: 'full' },
 			{ path: 'user-profile-settings',			component: UserProfileSettingsComponent},
