@@ -4,6 +4,8 @@ import { NotImplementedDialog } from '../dialogs/global/not-implemented/not-impl
 import { GoHomeDialog }                             from '../dialogs/global/go-home/go-home.component';
 import { QuizOrLearnDialog }                       from '../dialogs/learning/quiz-or-learn/quiz-or-learn.component';
 import { CanYouReadDialog }                     from '../dialogs/learning/can-you-read/can-you-read.component';
+import { LearningOpenerDialog }                     from '../dialogs/learning/learning-opener-dialog/learning-opener-dialog.component';
+import { OnhoverReminderDialog }                  from '../dialogs/learning/onhover-reminder-dialog/onhover-reminder-dialog.component';
 import { MdDialogRef, MdDialog, MdDialogConfig } from '@angular/material';
 
 @Injectable()
@@ -39,6 +41,22 @@ export class DialogsService {
     let dialogRef: MdDialogRef<CanYouReadDialog>;
 
     dialogRef = this.dialog.open(CanYouReadDialog);
+
+    return dialogRef.afterClosed();
+  }
+
+  public learningOpenerDialog():Observable<boolean>{
+    let dialogRef: MdDialogRef<LearningOpenerDialog>;
+
+    dialogRef = this.dialog.open(LearningOpenerDialog);
+
+    return dialogRef.afterClosed();
+  }
+
+  public onhoverReminderDialog():Observable<boolean>{
+    let dialogRef: MdDialogRef<OnhoverReminderDialog>;
+
+    dialogRef = this.dialog.open(OnhoverReminderDialog);
 
     return dialogRef.afterClosed();
   }

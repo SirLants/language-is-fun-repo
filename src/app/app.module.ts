@@ -42,6 +42,8 @@ import { CanYouReadDialog }             from './dialogs/learning/can-you-read/ca
 import { NotImplementedDialog }         from './dialogs/global/not-implemented/not-implemented.component';
 import { GoHomeDialog }                 from './dialogs/global/go-home/go-home.component';   
 import { QuizOrLearnDialog }            from './dialogs/learning/quiz-or-learn/quiz-or-learn.component';
+import { LearningOpenerDialog }         from './dialogs/learning/learning-opener-dialog/learning-opener-dialog.component';
+import { OnhoverReminderDialog } from './dialogs/learning/onhover-reminder-dialog/onhover-reminder-dialog.component';
 
 //Current hack for all of the hover events
 import { MouHover }                     from './hovers/learning/mou-hover/mou-hover.component';
@@ -90,7 +92,9 @@ import { HoverService }                 from './services/hover.service';
     SuguHover,
     DaHover,
     ZoHover,
-    ExtenderHover
+    ExtenderHover,
+    LearningOpenerDialog,
+    OnhoverReminderDialog
   ],
   imports: [
     BrowserModule,
@@ -106,6 +110,8 @@ import { HoverService }                 from './services/hover.service';
     GoHomeDialog,
     QuizOrLearnDialog,
     CanYouReadDialog,
+    LearningOpenerDialog,
+    OnhoverReminderDialog,
     MouHover,
     SuguHover,
     DaHover,
@@ -117,6 +123,8 @@ import { HoverService }                 from './services/hover.service';
     NotImplementedDialog,
     GoHomeDialog,
     QuizOrLearnDialog,
+    LearningOpenerDialog,
+    OnhoverReminderDialog,
     MouHover,
     SuguHover,
     DaHover,

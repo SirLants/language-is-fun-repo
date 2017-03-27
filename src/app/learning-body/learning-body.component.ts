@@ -21,6 +21,9 @@ export class LearningBodyComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.dialogsService
+      .learningOpenerDialog()
+      .subscribe(res => this.result = res);
   }
 
 }

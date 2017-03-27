@@ -67,6 +67,9 @@ export class LearningBody2Component implements OnInit {
   }
 
   ngOnInit() {
+    this.dialogsService
+      .onhoverReminderDialog()
+      .subscribe(res => this.result = res);
   }
 
 }
