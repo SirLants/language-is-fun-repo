@@ -6,16 +6,16 @@
   </div>
   <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
     <div class="snippet-wrapper">
-      <img src={{activeLink}}>
-      <div class="word-wrap mou">
+      <img [src]="activeLink">
+      <div class="word-wrap mou" *ngIf="isJapanese" (mouseover)="openMouHover()">
       </div>
-      <div class="word-wrap sugu">
+      <div class="word-wrap sugu" *ngIf="isJapanese" (mouseover)="openSuguHover()">
       </div>
-      <div class="word-wrap da">
+      <div class="word-wrap da" *ngIf="isJapanese" (mouseover)="openDaHover()">
       </div>
-      <div class="word-wrap zo">
+      <div class="word-wrap zo" *ngIf="isJapanese" (mouseover)="openZoHover()">
       </div>
-      <div class="word-wrap extender">
+      <div class="word-wrap extender" *ngIf="isJapanese" (mouseover)="openExtenderHover()">
       </div>
     </div>
     <button md-button color="primary" (click)="flipLanguage()" [style.margin-top.px]='5'>

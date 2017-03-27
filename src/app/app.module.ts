@@ -43,10 +43,18 @@ import { NotImplementedDialog }         from './dialogs/global/not-implemented/n
 import { GoHomeDialog }                 from './dialogs/global/go-home/go-home.component';   
 import { QuizOrLearnDialog }            from './dialogs/learning/quiz-or-learn/quiz-or-learn.component';
 
+//Current hack for all of the hover events
+import { MouHover }                     from './hovers/learning/mou-hover/mou-hover.component';
+import { SuguHover }                    from './hovers/learning/sugu-hover/sugu-hover.component';
+import { DaHover }                      from './hovers/learning/da-hover/da-hover.component';
+import { ZoHover }                      from './hovers/learning/zo-hover/zo-hover.component';
+import { ExtenderHover }                from './hovers/learning/extender-hover/extender-hover.component';
+
 //These are all of our custom services
 import { DialogsService }               from './services/dialogs.service';
 import { QuizService }                  from './services/quiz.service';
 import { SidenavService }               from './services/sidenav.service';
+import { HoverService }                 from './services/hover.service';
 
 @NgModule({
   declarations: [
@@ -77,7 +85,12 @@ import { SidenavService }               from './services/sidenav.service';
     GoHomeDialog,
     QuizOrLearnDialog,
     AppendixComponent,
-    HomeAppendixComponent
+    HomeAppendixComponent,
+    MouHover,
+    SuguHover,
+    DaHover,
+    ZoHover,
+    ExtenderHover
   ],
   imports: [
     BrowserModule,
@@ -92,18 +105,29 @@ import { SidenavService }               from './services/sidenav.service';
     NotImplementedDialog,
     GoHomeDialog,
     QuizOrLearnDialog,
-    CanYouReadDialog
+    CanYouReadDialog,
+    MouHover,
+    SuguHover,
+    DaHover,
+    ZoHover,
+    ExtenderHover
   ],
   entryComponents: [
     CanYouReadDialog,
     NotImplementedDialog,
     GoHomeDialog,
-    QuizOrLearnDialog
+    QuizOrLearnDialog,
+    MouHover,
+    SuguHover,
+    DaHover,
+    ZoHover,
+    ExtenderHover
   ],
   providers: [
     DialogsService,
     QuizService,
-    SidenavService
+    SidenavService,
+    HoverService
   ],
   bootstrap: [AppComponent]
 })

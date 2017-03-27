@@ -1,0 +1,19 @@
+<h2 md-dialog-title fxLayoutAlign="center">Vocabulary and Grammar</h2>
+<md-dialog-content fxLayout="column">
+  <div>
+    <span [style.font-weight]="'bold'">zo: </span>
+    <span>informal particle, provides masculine emphasis</span>
+  </div>
+  <div>
+    <span [style.font-weight]="'bold'">Example: </span>
+    <span>絶対だぞ！</span>
+  </div>
+  <div>
+    <span [style.font-weight]="'bold'">Translated: </span>
+    <span>You absolutely have to come!</span>
+  </div>
+</md-dialog-content>
+<md-dialog-actions fxLayoutAlign="space-around center">
+  <button md-raised-button color="accent" md-dialog-close (click)="toggleAppendix()">Open Appendix Entry</button>
+  <button md-raised-button color="primary" md-dialog-close>Return</button>
+</md-dialog-actions>

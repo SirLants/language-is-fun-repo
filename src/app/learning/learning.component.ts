@@ -20,7 +20,7 @@ export class LearningComponent implements OnInit {
   }
 
   toggleAppendix(){
-    this.sidenav.toggle();
+    this._sidenavService.sidenav.toggle();
     this._sidenavService.setBoolean(true);
   }
 }

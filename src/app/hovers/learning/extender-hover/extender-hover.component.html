@@ -1,0 +1,19 @@
+<h2 md-dialog-title fxLayoutAlign="center">Vocabulary and Grammar</h2>
+<md-dialog-content fxLayout="column">
+  <div>
+    <span [style.font-weight]="'bold'">extender: </span>
+    <span>grammatical symbol to extend vowel</span>
+  </div>
+  <div>
+    <span [style.font-weight]="'bold'">Example: </span>
+    <span>おー！</span>
+  </div>
+  <div>
+    <span [style.font-weight]="'bold'">Translated: </span>
+    <span>Ohhhh!</span>
+  </div>
+</md-dialog-content>
+<md-dialog-actions fxLayoutAlign="space-around center">
+  <button md-raised-button color="accent" md-dialog-close (click)="toggleAppendix()">Open Appendix Entry</button>
+  <button md-raised-button color="primary" md-dialog-close>Return</button>
+</md-dialog-actions>

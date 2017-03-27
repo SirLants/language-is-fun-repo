@@ -1,0 +1,19 @@
+<h2 md-dialog-title fxLayoutAlign="center">Vocabulary and Grammar</h2>
+<md-dialog-content fxLayout="column">
+  <div>
+    <span [style.font-weight]="'bold'">da: </span>
+    <span>non-polite particle for "to be"</span>
+  </div>
+  <div>
+    <span [style.font-weight]="'bold'">Example: </span>
+    <span>火事だ！</span>
+  </div>
+  <div>
+    <span [style.font-weight]="'bold'">Translated: </span>
+    <span>[It is a] fire!</span>
+  </div>
+</md-dialog-content>
+<md-dialog-actions fxLayoutAlign="space-around center">
+  <button md-raised-button color="accent" md-dialog-close (click)="toggleAppendix()">Open Appendix Entry</button>
+  <button md-raised-button color="primary" md-dialog-close>Return</button>
+</md-dialog-actions>

@@ -21,7 +21,7 @@
             <p>You have learned: 315 word total</p>
           </md-card-content>
           <md-card-actions fxLayoutAlign="center center">
-            <button md-raised-button routerLink="/learning" color="accent">GO LEARN MORE!</button>
+            <button md-raised-button routerLink="/learning" color="primary">GO LEARN MORE!</button>
           </md-card-actions>
         </md-card>
       </div>
@@ -48,7 +48,7 @@
         <div fxLayout="column" class="light-bottom-border">
           <div fxLayout="row" fxLayoutAlign="space-between">
             <md-card-title>CURRENT MATERIAL</md-card-title>
-            <button md-icon-button color="accent"><md-icon>star</md-icon></button>
+            <button md-icon-button color="accent" (click)="openNotImplemented()"><md-icon>star</md-icon></button>
           </div>
           <div fxLayout="row">
             <div fxFlex="30">
@@ -69,7 +69,7 @@
         <div fxLayout="column" class="margin-top-15">
           <div fxLayout="row" fxLayoutAlign="space-between">
             <md-card-title>PAST MATERIAL</md-card-title>
-            <button md-icon-button color="accent"><md-icon>star_border</md-icon></button>
+            <button md-icon-button color="accent" (click)="openNotImplemented()"><md-icon>star_border</md-icon></button>
           </div>
           <div fxLayout="row">
             <div fxFlex="30">
